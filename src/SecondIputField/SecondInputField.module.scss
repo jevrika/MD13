@@ -1,0 +1,30 @@
+.secondInputForm{
+  display: flex;
+  justify-content: flex-start;
+  margin: 0;
+  padding:15px;
+
+}
+
+.secondInput{
+  border-radius: 10px;
+  border: 1px solid #808080;
+  padding:10px;
+
+}
+
+.formWrapper{
+  display: flex;
+}
+
+.inputValuesDiv{
+  margin: 15px;
+  margin:20px;
+}
+
+.inputValueItem{
+  display: grid;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+}

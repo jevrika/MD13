@@ -1,0 +1,25 @@
+.dropdown{
+  border:1px solid #808080;
+  border-radius: 10px;
+  margin:15px;
+  padding:10px 25px;
+}
+
+.buttonAndDropdownWrapper{
+  display: flex;
+  flex-direction: row;
+  gap:10px;
+}
+
+.colorBox{
+  width: 100px;
+  height: 100px;
+  margin:0;
+}
+
+.colorBoxWrapper{
+  display: flex;
+  flex-direction: row;
+  gap:10px;
+  margin:15px
+}

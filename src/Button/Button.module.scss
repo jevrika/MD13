@@ -1,0 +1,28 @@
+.buttonWrapper{
+  margin: 15px;
+}
+
+button {
+  padding: 15px 25px;
+  border:none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.buttonPrimary {
+  background-color: #b7f5b7;
+  max-width: 120px;
+  width: 100%;
+}
+
+.buttonSecondary {
+  background-color: #b3fcfc;
+  max-width: 120px;
+  width: 100%;
+}
+
+.buttonPlus {
+  border:1px solid #808080;
+  background-color: #ffffff;
+  padding:10px 20px;
+}
