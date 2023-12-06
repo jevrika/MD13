@@ -1,18 +1,15 @@
-import { SetStateAction, useState } from 'react';
+import { ChangeEvent, useState } from 'react';
 import Button from '../Button/Button';
 import styles from './DropdownWithColors.module.scss'
 
 const DropdownWithColors = () => {
 
-  const [selectedColor, setselectedColor] = useState()
-  const [colors, setColors] = useState([])
-
+  const [selectedColor, setselectedColor] = useState('')
+  const [colors, setColors] = useState<string[]>([])
   const [showDiv, setShowDiv] = useState(false)
 
-
-  const handleChange = (e) => {
-    setselectedColor(e.target.value)
-
+  const handleChange = (event: ChangeEvent<HTMLSelectElement>)=> {
+    setselectedColor(event.target.value)
   };
 
   const handleClick = () => {
@@ -26,27 +23,30 @@ const DropdownWithColors = () => {
     <div className={styles.buttonAndDropdownWrapper}>
         <Button buttonText={'+'} className={'buttonPlus'} buttonType={'submit'} onClick={handleClick} />
         <select className={styles.dropdown} value={selectedColor} onChange={handleChange}>
-          <option value="blue" style={{ color: 'aqua' }}>
-            Blue
+         <option value="" >
+          Choose Color
           </option>
-          <option value="red" style={{ color: 'red' }}>
-            Red
+          <option value="B3D3B8" >
+          Light Moss Green
           </option>
-          <option value="orange" style={{ color: 'orange' }}>
-            Orange
+          <option value="80A5B2" >
+          Pewter Blue
           </option>
-          <option value="green" style={{ color: 'green' }}>
-            Green
+          <option value="6B6282" >
+          Old Lavender
           </option>
-          <option value="pink" style={{ color: 'pink' }}>
-            Pink
+          <option value="CF7277" >
+          Cinnamon Satin
+          </option>
+          <option value="E8B558" >
+          Sunray
           </option>
         </select>
     </div>
       <div className={styles.colorBoxWrapper}>
       {showDiv &&
         colors.map((color, index) => (
-          <div className={styles.colorBox} key={index} style={{ backgroundColor: color }}>
+          <div className={styles.colorBox} key={index} style={{ backgroundColor: `#${color}` }}>
           </div>
         ))}
       </div>

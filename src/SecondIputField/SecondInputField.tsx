@@ -4,7 +4,7 @@ import styles from './SecondInputField.module.scss';
 
 const SecondInputField = () => {
 
-  const [inputValue, setInputValues] = useState(['']);
+  const [inputValue, setInputValues] = useState<string[]>([]);
   const [currentInput, setCurrentInput] = useState('');
   const ref = useRef<HTMLInputElement>(null);
 
@@ -30,13 +30,13 @@ const SecondInputField = () => {
           <Button buttonType='submit' buttonText="Submit" className='buttonPrimary' />
         </form>
       </div>
-      <div className={styles.inputValuesDiv}>
+      {inputValue && <div className={styles.inputValuesDiv}>
         {inputValue.map((value, index) => (
           <div key={index} className={styles.inputValueItem}>
             {value}
           </div>
         ))}
-      </div>
+      </div>}
     </>
   )
 }

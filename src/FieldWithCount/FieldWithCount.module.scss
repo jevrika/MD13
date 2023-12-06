@@ -1,0 +1,26 @@
+.countText {
+  margin:15px;
+}
+
+.fieldWrapper{
+  display: flex;
+  flex-direction: column;
+  border:1px solid grey;
+  width: 500px;
+  margin:15px;
+  padding-bottom:30px;
+}
+
+.input{
+  border-radius: 10px;
+  border: 1px solid #808080;
+  padding:10px;
+}
+
+.inputWrapper{
+  margin-left:10px;
+}
+
+.inputText{
+  padding:10px;
+}
