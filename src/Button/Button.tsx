@@ -7,6 +7,7 @@ type ButtonType = {
   buttonType: "submit" | "reset" | "button";
   disabled?: boolean;
   onClick?: () => void;
+  onChange?: () => void;
 }
 
 const Button = ({ buttonText , className, buttonType, disabled, onClick }: ButtonType) => {

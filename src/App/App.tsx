@@ -6,6 +6,8 @@ import SecondInputField from '../SecondIputField/SecondInputField'
 import DropdownWithColors from '../DropdownWithColors/DropdownWithColors'
 import FieldWithCount from '../FieldWithCount/FieldWithCount'
 import SecondFieldWithCount from '../SecondFieldWithCount/SecondFieldWithCount'
+import ChangeDivColor from '../ChangeDivColor/ChangeDivColor'
+import CloneDiv from '../CloneDiv/CloneDiv'
 
 function App() {
 
@@ -18,6 +20,8 @@ function App() {
       <DropdownWithColors />
       <FieldWithCount />
       <SecondFieldWithCount />
+      <ChangeDivColor />
+      <CloneDiv />
     </>
   )
 }

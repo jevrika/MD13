@@ -26,7 +26,6 @@ const FieldWithCount = () => {
         <p className={styles.countText} style={{ fontSize: `${fontSize}px` }} > Count: {count} </p>
         <div className={styles.inputWrapper}>
           <input className={styles.input} onChange={handleChange}></input>
-          <p className={styles.inputText}>{inputValue}</p>
         </div>
       </div>
     </>

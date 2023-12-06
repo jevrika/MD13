@@ -8,7 +8,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
   {console.log('First Render')}
   <React.StrictMode>
     <App />
-  </React.StrictMode>,
+  </React.StrictMode>
   </>
 )  
 

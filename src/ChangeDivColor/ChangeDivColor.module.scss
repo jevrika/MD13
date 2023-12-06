@@ -1,0 +1,15 @@
+.div{
+  width: 100px;
+  height: 100px;
+  border: 1px solid grey;
+  float:left;
+  margin:0;
+  margin-left:15px;
+  border-radius: 10px;
+}
+
+.wrapper{
+  display:flex;
+  gap:25px;
+  align-items: center;
+}
