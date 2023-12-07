@@ -1,0 +1,18 @@
+.clonedDiv{
+  width: 100px;
+  height: 100px;
+  border: none;
+  float:left;
+  margin:10px;
+  margin-left:10px;
+  border-radius: 10px;
+  background-color: gold;
+}
+
+.wrapper{
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap:25px;
+  margin:10px;
+}

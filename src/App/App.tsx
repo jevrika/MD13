@@ -8,6 +8,7 @@ import FieldWithCount from '../FieldWithCount/FieldWithCount'
 import SecondFieldWithCount from '../SecondFieldWithCount/SecondFieldWithCount'
 import ChangeDivColor from '../ChangeDivColor/ChangeDivColor'
 import CloneDiv from '../CloneDiv/CloneDiv'
+import MoveDiv from '../MoveDiv/MoveDiv'
 
 function App() {
 
@@ -22,8 +23,10 @@ function App() {
       <SecondFieldWithCount />
       <ChangeDivColor />
       <CloneDiv />
-    </>
+      <MoveDiv />
+      </>
   )
 }
 
 export default App
+
