@@ -1,4 +1,4 @@
-import {  ChangeEvent, useState } from "react";
+import { ChangeEvent, useState } from "react";
 import Button from "../Button/Button";
 import styles from './FieldWithCount.module.scss'
 
@@ -18,7 +18,7 @@ const FieldWithCount = () => {
 
   return (
     <>
-    <div className={styles.fieldWrapper}>
+      <div className={styles.fieldWrapper}>
         <Button buttonText={"+"} className={"buttonPlus"} buttonType={"button"} onClick={handleIncrement} />
         <p className={styles.countText}> Count: {count} </p>
         <div className={styles.inputWrapper}>
